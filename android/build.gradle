@@ -6,7 +6,12 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven { url "https://android-sdk.payfort.com" }
+        maven {
+            url "https://android-sdk.payfort.com"
+            content {
+                includeGroup "com.amazon"
+            }
+        }
     }
 
     dependencies {
@@ -19,7 +24,12 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
-        maven { url "https://android-sdk.payfort.com" }
+        maven {
+            url "https://android-sdk.payfort.com"
+            content {
+                includeGroup "com.amazon"
+            }
+        }
     }
 }
 
